@@ -1,0 +1,37 @@
+---
+// Página provisional de la Fase 1: comprueba que tokens, fuentes e íconos funcionan.
+// Se reemplaza por la landing real en las fases 2–4.
+import { Icon } from "astro-icon/components";
+import "@/styles/global.css";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Trans Capital S.A.S</title>
+  </head>
+  <body>
+    <main class="mx-auto max-w-page px-page py-panel">
+      <div class="flex flex-col items-start gap-heading px-inset">
+        <span class="text-eyebrow font-semibold tracking-eyebrow text-action uppercase">
+          Fase 1
+        </span>
+        <h1 class="font-display text-display-section font-extrabold tracking-section">
+          Base del proyecto <span class="text-brand">lista.</span>
+        </h1>
+        <a
+          href="https://wa.me/573155404392?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20transporte"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2.5 rounded-pill bg-action px-7 py-4.5 font-semibold text-white no-underline transition-colors hover:bg-action-hover hover:text-white"
+        >
+          <Icon name="lucide:message-circle" size={20} aria-hidden="true" />
+          Cotizar por WhatsApp
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
